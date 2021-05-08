@@ -34,6 +34,7 @@ import FooterBar from '@/components/footer-bar'
 import PageListPanel from '@/components/panels/page-list-panel'
 import StagePanel from '@/components/panels/stage-panel'
 import PropertyPanel from '@/components/panels/property-panel'
+import TimeLinePanel from '@/components/panels/time-line-panel'
 // @ is an alias to /src
 export default {
   name: 'editor',
@@ -53,7 +54,8 @@ export default {
     FooterBar,
     PageListPanel: PageListPanel.view,
     StagePanel: StagePanel.view,
-    PropertyPanel: PropertyPanel.view
+    PropertyPanel: PropertyPanel.view,
+    TimeLinePanel: TimeLinePanel.view
   },
   mounted() {
     this.calcRowHeight()
@@ -67,7 +69,8 @@ export default {
       this.layout = [
         PageListPanel,
         StagePanel,
-        PropertyPanel
+        PropertyPanel,
+        TimeLinePanel
       ].map(item => item.layout)
     }
   }
