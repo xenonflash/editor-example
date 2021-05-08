@@ -3,6 +3,7 @@ dependencies:
   tslib: registry.npm.taobao.org/tslib/2.2.0
   vue: registry.npm.taobao.org/vue/2.6.12
   vue-class-component: registry.nlark.com/vue-class-component/7.2.6_vue@2.6.12
+  vue-grid-layout: registry.nlark.com/vue-grid-layout/2.3.12
   vue-property-decorator: registry.npm.taobao.org/vue-property-decorator/9.1.2_2dc4252c5371093c9ebcca71536ac4e9
   vue-router: registry.npm.taobao.org/vue-router/3.5.1
   vuex: registry.npm.taobao.org/vuex/3.6.2_vue@2.6.12
@@ -431,6 +432,307 @@ packages:
       registry: http://registry.vnpm.vipkid.com.cn/
       tarball: https://registry.nlark.com/@babel/types/download/@babel/types-7.14.1.tgz
     version: 7.14.1
+  registry.nlark.com/@interactjs/actions/1.10.11:
+    dev: false
+    name: '@interactjs/actions'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/core': 1.10.11
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-7Gj9YL7nUfgMZQlktbopnrav54w=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/actions/download/@interactjs/actions-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/actions/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43:
+    dependencies:
+      '@interactjs/core': registry.nlark.com/@interactjs/core/1.10.11_@interactjs+utils@1.10.11
+      '@interactjs/utils': registry.nlark.com/@interactjs/utils/1.10.11
+    dev: false
+    id: registry.nlark.com/@interactjs/actions/1.10.11
+    name: '@interactjs/actions'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/core': 1.10.11
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-7Gj9YL7nUfgMZQlktbopnrav54w=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/actions/download/@interactjs/actions-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/auto-scroll/1.10.11_@interactjs+utils@1.10.11:
+    dependencies:
+      '@interactjs/utils': registry.nlark.com/@interactjs/utils/1.10.11
+    dev: false
+    id: registry.nlark.com/@interactjs/auto-scroll/1.10.11
+    name: '@interactjs/auto-scroll'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-DArH27Vap9ffbAoEx367MUjL31Q=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/auto-scroll/download/@interactjs/auto-scroll-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/auto-start/1.10.11:
+    dev: false
+    name: '@interactjs/auto-start'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/core': 1.10.11
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-XOBFdA81vjZkDrrQU9t7VlLhjnA=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/auto-start/download/@interactjs/auto-start-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/auto-start/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43:
+    dependencies:
+      '@interactjs/core': registry.nlark.com/@interactjs/core/1.10.11_@interactjs+utils@1.10.11
+      '@interactjs/utils': registry.nlark.com/@interactjs/utils/1.10.11
+    dev: false
+    id: registry.nlark.com/@interactjs/auto-start/1.10.11
+    name: '@interactjs/auto-start'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/core': 1.10.11
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-XOBFdA81vjZkDrrQU9t7VlLhjnA=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/auto-start/download/@interactjs/auto-start-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/core/1.10.11_@interactjs+utils@1.10.11:
+    dependencies:
+      '@interactjs/utils': registry.nlark.com/@interactjs/utils/1.10.11
+    dev: false
+    id: registry.nlark.com/@interactjs/core/1.10.11
+    name: '@interactjs/core'
+    peerDependencies:
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-iwIDSSwbpvhDLyC3GK5TcH/PxyQ=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/core/download/@interactjs/core-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/dev-tools/1.10.11_715b9e5b38d7759f9743d7230b4b8d54:
+    dependencies:
+      '@interactjs/modifiers': registry.nlark.com/@interactjs/modifiers/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43
+      '@interactjs/utils': registry.nlark.com/@interactjs/utils/1.10.11
+    dev: false
+    id: registry.nlark.com/@interactjs/dev-tools/1.10.11
+    name: '@interactjs/dev-tools'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/modifiers': 1.10.11
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-jUtbZQz3ToAJCfUpYgCHABQ6QwQ=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/dev-tools/download/@interactjs/dev-tools-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/dev-tools/1.10.11_@interactjs+modifiers@1.10.11:
+    dependencies:
+      '@interactjs/modifiers': registry.nlark.com/@interactjs/modifiers/1.10.11
+    dev: false
+    id: registry.nlark.com/@interactjs/dev-tools/1.10.11
+    name: '@interactjs/dev-tools'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/modifiers': 1.10.11
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-jUtbZQz3ToAJCfUpYgCHABQ6QwQ=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/dev-tools/download/@interactjs/dev-tools-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/inertia/1.10.11_f6d335ff31c1405992ce3bd2980059bb:
+    dependencies:
+      '@interactjs/core': registry.nlark.com/@interactjs/core/1.10.11_@interactjs+utils@1.10.11
+      '@interactjs/modifiers': registry.nlark.com/@interactjs/modifiers/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43
+      '@interactjs/offset': registry.nlark.com/@interactjs/offset/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43
+      '@interactjs/utils': registry.nlark.com/@interactjs/utils/1.10.11
+    dev: false
+    id: registry.nlark.com/@interactjs/inertia/1.10.11
+    name: '@interactjs/inertia'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/core': 1.10.11
+      '@interactjs/modifiers': 1.10.11
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-WIZBczEJhbgkfYTjRxSOps17iKg=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/inertia/download/@interactjs/inertia-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/interact/1.10.11:
+    dependencies:
+      '@interactjs/core': registry.nlark.com/@interactjs/core/1.10.11_@interactjs+utils@1.10.11
+      '@interactjs/types': registry.nlark.com/@interactjs/types/1.10.11
+      '@interactjs/utils': registry.nlark.com/@interactjs/utils/1.10.11
+    dev: false
+    name: '@interactjs/interact'
+    resolution:
+      integrity: sha1-2W4/lJ7kABpqNNw2OiMmRvndKxs=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/interact/download/@interactjs/interact-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/interactjs/1.10.11:
+    dependencies:
+      '@interactjs/actions': registry.nlark.com/@interactjs/actions/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43
+      '@interactjs/auto-scroll': registry.nlark.com/@interactjs/auto-scroll/1.10.11_@interactjs+utils@1.10.11
+      '@interactjs/auto-start': registry.nlark.com/@interactjs/auto-start/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43
+      '@interactjs/core': registry.nlark.com/@interactjs/core/1.10.11_@interactjs+utils@1.10.11
+      '@interactjs/dev-tools': registry.nlark.com/@interactjs/dev-tools/1.10.11_715b9e5b38d7759f9743d7230b4b8d54
+      '@interactjs/inertia': registry.nlark.com/@interactjs/inertia/1.10.11_f6d335ff31c1405992ce3bd2980059bb
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+      '@interactjs/modifiers': registry.nlark.com/@interactjs/modifiers/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43
+      '@interactjs/offset': registry.nlark.com/@interactjs/offset/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43
+      '@interactjs/pointer-events': registry.nlark.com/@interactjs/pointer-events/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43
+      '@interactjs/reflow': registry.nlark.com/@interactjs/reflow/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43
+      '@interactjs/utils': registry.nlark.com/@interactjs/utils/1.10.11
+    dev: false
+    name: '@interactjs/interactjs'
+    resolution:
+      integrity: sha1-0P3WsDwchVBDsfYIoQsvXMrEtLc=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/interactjs/download/@interactjs/interactjs-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/modifiers/1.10.11:
+    dependencies:
+      '@interactjs/snappers': registry.nlark.com/@interactjs/snappers/1.10.11
+    dev: false
+    name: '@interactjs/modifiers'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/core': 1.10.11
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-9AliqX/T4RDma3lmR5bCTzxObNY=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/modifiers/download/@interactjs/modifiers-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/modifiers/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43:
+    dependencies:
+      '@interactjs/core': registry.nlark.com/@interactjs/core/1.10.11_@interactjs+utils@1.10.11
+      '@interactjs/snappers': registry.nlark.com/@interactjs/snappers/1.10.11_@interactjs+utils@1.10.11
+      '@interactjs/utils': registry.nlark.com/@interactjs/utils/1.10.11
+    dev: false
+    id: registry.nlark.com/@interactjs/modifiers/1.10.11
+    name: '@interactjs/modifiers'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/core': 1.10.11
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-9AliqX/T4RDma3lmR5bCTzxObNY=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/modifiers/download/@interactjs/modifiers-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/offset/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43:
+    dependencies:
+      '@interactjs/core': registry.nlark.com/@interactjs/core/1.10.11_@interactjs+utils@1.10.11
+      '@interactjs/utils': registry.nlark.com/@interactjs/utils/1.10.11
+    dev: false
+    id: registry.nlark.com/@interactjs/offset/1.10.11
+    name: '@interactjs/offset'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/core': 1.10.11
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-USJC8zDcgM29pP7aj7NMBJH1BJY=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/offset/download/@interactjs/offset-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/pointer-events/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43:
+    dependencies:
+      '@interactjs/core': registry.nlark.com/@interactjs/core/1.10.11_@interactjs+utils@1.10.11
+      '@interactjs/utils': registry.nlark.com/@interactjs/utils/1.10.11
+    dev: false
+    id: registry.nlark.com/@interactjs/pointer-events/1.10.11
+    name: '@interactjs/pointer-events'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/core': 1.10.11
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-/0x0p113EfwQBuvzLqNE41v/6Tg=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/pointer-events/download/@interactjs/pointer-events-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/reflow/1.10.11_9e0a652af5b1a24933c8c87f2d1f5d43:
+    dependencies:
+      '@interactjs/core': registry.nlark.com/@interactjs/core/1.10.11_@interactjs+utils@1.10.11
+      '@interactjs/utils': registry.nlark.com/@interactjs/utils/1.10.11
+    dev: false
+    id: registry.nlark.com/@interactjs/reflow/1.10.11
+    name: '@interactjs/reflow'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/core': 1.10.11
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-Q9KtjKACv5gJEnPRef1wscq/ueI=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/reflow/download/@interactjs/reflow-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/snappers/1.10.11:
+    dev: false
+    name: '@interactjs/snappers'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-PrbkWrgxnA3UtgsoTFXIdWGqrbE=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/snappers/download/@interactjs/snappers-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/snappers/1.10.11_@interactjs+utils@1.10.11:
+    dependencies:
+      '@interactjs/utils': registry.nlark.com/@interactjs/utils/1.10.11
+    dev: false
+    id: registry.nlark.com/@interactjs/snappers/1.10.11
+    name: '@interactjs/snappers'
+    optionalDependencies:
+      '@interactjs/interact': registry.nlark.com/@interactjs/interact/1.10.11
+    peerDependencies:
+      '@interactjs/utils': 1.10.11
+    resolution:
+      integrity: sha1-PrbkWrgxnA3UtgsoTFXIdWGqrbE=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/snappers/download/@interactjs/snappers-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/types/1.10.11:
+    dev: false
+    name: '@interactjs/types'
+    resolution:
+      integrity: sha1-Kb4l1QP5x4Qt8GL6PNpbBEpHzyo=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/types/download/@interactjs/types-1.10.11.tgz
+    version: 1.10.11
+  registry.nlark.com/@interactjs/utils/1.10.11:
+    dev: false
+    name: '@interactjs/utils'
+    resolution:
+      integrity: sha1-k50PEo36lsZzJ2zKPrfzE9ktqr8=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/@interactjs/utils/download/@interactjs/utils-1.10.11.tgz
+    version: 1.10.11
   registry.nlark.com/@types/node/15.0.2:
     dev: true
     name: '@types/node'
@@ -1308,6 +1610,7 @@ packages:
     version: 4.3.1
   registry.nlark.com/debug/4.3.1_supports-color@6.1.0:
     dependencies:
+      ms: registry.npm.taobao.org/ms/2.1.2
       supports-color: registry.npm.taobao.org/supports-color/6.1.0
     dev: true
     engines:
@@ -2411,6 +2714,21 @@ packages:
       registry: http://registry.vnpm.vipkid.com.cn/
       tarball: https://registry.nlark.com/vue-class-component/download/vue-class-component-7.2.6.tgz?cache=0&sync_timestamp=1620434532830&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue-class-component%2Fdownload%2Fvue-class-component-7.2.6.tgz
     version: 7.2.6
+  registry.nlark.com/vue-grid-layout/2.3.12:
+    dependencies:
+      '@interactjs/actions': registry.nlark.com/@interactjs/actions/1.10.11
+      '@interactjs/auto-start': registry.nlark.com/@interactjs/auto-start/1.10.11
+      '@interactjs/dev-tools': registry.nlark.com/@interactjs/dev-tools/1.10.11_@interactjs+modifiers@1.10.11
+      '@interactjs/interactjs': registry.nlark.com/@interactjs/interactjs/1.10.11
+      '@interactjs/modifiers': registry.nlark.com/@interactjs/modifiers/1.10.11
+      element-resize-detector: registry.npm.taobao.org/element-resize-detector/1.2.2
+    dev: false
+    name: vue-grid-layout
+    resolution:
+      integrity: sha1-tjljV7hqZoBcEXQx18GT0uBm7do=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.nlark.com/vue-grid-layout/download/vue-grid-layout-2.3.12.tgz
+    version: 2.3.12
   registry.nlark.com/vue-style-loader/4.1.3:
     dependencies:
       hash-sum: registry.npm.taobao.org/hash-sum/1.0.2
@@ -2457,7 +2775,7 @@ packages:
       serve-index: registry.npm.taobao.org/serve-index/1.9.1
       sockjs: registry.npm.taobao.org/sockjs/0.3.21
       sockjs-client: registry.npm.taobao.org/sockjs-client/1.5.1
-      spdy: registry.npm.taobao.org/spdy/4.0.2
+      spdy: registry.npm.taobao.org/spdy/4.0.2_supports-color@6.1.0
       strip-ansi: registry.npm.taobao.org/strip-ansi/3.0.1
       supports-color: registry.npm.taobao.org/supports-color/6.1.0
       url: registry.npm.taobao.org/url/0.11.0
@@ -4822,6 +5140,14 @@ packages:
       registry: http://registry.vnpm.vipkid.com.cn/
       tarball: https://registry.npm.taobao.org/base/download/base-0.11.2.tgz
     version: 0.11.2
+  registry.npm.taobao.org/batch-processor/1.0.0:
+    dev: false
+    name: batch-processor
+    resolution:
+      integrity: sha1-dclcMrdI4IUNEMKxaPa9vpiRrOg=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.npm.taobao.org/batch-processor/download/batch-processor-1.0.0.tgz
+    version: 1.0.0
   registry.npm.taobao.org/batch/0.6.1:
     dev: true
     name: batch
@@ -6443,6 +6769,16 @@ packages:
       registry: http://registry.vnpm.vipkid.com.cn/
       tarball: https://registry.npm.taobao.org/ee-first/download/ee-first-1.1.1.tgz
     version: 1.1.1
+  registry.npm.taobao.org/element-resize-detector/1.2.2:
+    dependencies:
+      batch-processor: registry.npm.taobao.org/batch-processor/1.0.0
+    dev: false
+    name: element-resize-detector
+    resolution:
+      integrity: sha1-v3w/+RWVfk5i6GJB7S+chrB4iSs=
+      registry: http://registry.vnpm.vipkid.com.cn/
+      tarball: https://registry.npm.taobao.org/element-resize-detector/download/element-resize-detector-1.2.2.tgz
+    version: 1.2.2
   registry.npm.taobao.org/elliptic/6.5.4:
     dependencies:
       bn.js: registry.npm.taobao.org/bn.js/4.12.0
@@ -11828,32 +12164,38 @@ packages:
       registry: http://registry.vnpm.vipkid.com.cn/
       tarball: https://registry.npm.taobao.org/spdx-license-ids/download/spdx-license-ids-3.0.7.tgz
     version: 3.0.7
-  registry.npm.taobao.org/spdy-transport/3.0.0:
+  registry.npm.taobao.org/spdy-transport/3.0.0_supports-color@6.1.0:
     dependencies:
-      debug: registry.nlark.com/debug/4.3.1
+      debug: registry.nlark.com/debug/4.3.1_supports-color@6.1.0
       detect-node: registry.npm.taobao.org/detect-node/2.0.5
       hpack.js: registry.npm.taobao.org/hpack.js/2.1.6
       obuf: registry.npm.taobao.org/obuf/1.1.2
       readable-stream: registry.npm.taobao.org/readable-stream/3.6.0
       wbuf: registry.npm.taobao.org/wbuf/1.7.3
     dev: true
+    id: registry.npm.taobao.org/spdy-transport/3.0.0
     name: spdy-transport
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha1-ANSGOmQArXXfkzYaFghgXl3NzzE=
       registry: http://registry.vnpm.vipkid.com.cn/
       tarball: https://registry.npm.taobao.org/spdy-transport/download/spdy-transport-3.0.0.tgz
     version: 3.0.0
-  registry.npm.taobao.org/spdy/4.0.2:
+  registry.npm.taobao.org/spdy/4.0.2_supports-color@6.1.0:
     dependencies:
-      debug: registry.nlark.com/debug/4.3.1
+      debug: registry.nlark.com/debug/4.3.1_supports-color@6.1.0
       handle-thing: registry.npm.taobao.org/handle-thing/2.0.1
       http-deceiver: registry.npm.taobao.org/http-deceiver/1.2.7
       select-hose: registry.npm.taobao.org/select-hose/2.0.0
-      spdy-transport: registry.npm.taobao.org/spdy-transport/3.0.0
+      spdy-transport: registry.npm.taobao.org/spdy-transport/3.0.0_supports-color@6.1.0
     dev: true
     engines:
       node: '>=6.0.0'
+    id: registry.npm.taobao.org/spdy/4.0.2
     name: spdy
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha1-t09GYgOj7aRSwCSSuR+56EonZ3s=
       registry: http://registry.vnpm.vipkid.com.cn/
@@ -13425,6 +13767,7 @@ specifiers:
   typescript: ~4.1.5
   vue: ^2.6.11
   vue-class-component: ^7.2.3
+  vue-grid-layout: ^2.3.12
   vue-property-decorator: ^9.1.2
   vue-router: ^3.2.0
   vue-template-compiler: ^2.6.11
