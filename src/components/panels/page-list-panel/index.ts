@@ -5,9 +5,8 @@ export default {
   layout: {
     x: 0,
     y: 0,
-    w: 2,
+    w: 4,
     h: 100,
-    maxW: 2,
     i: 'page-list-panel'
   }
 }

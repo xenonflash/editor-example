@@ -3,7 +3,7 @@
     <menu-bar></menu-bar>
     <grid-layout
       :layout.sync="layout"
-      :col-num="12"
+      :col-num="24"
       :row-height="rowHeight"
       :is-draggable="true"
       :is-resizable="true"
