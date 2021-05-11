@@ -13,6 +13,7 @@
       :use-css-transforms="true"
     >
       <grid-item
+        :is-draggable="false"
         v-for="item in layout"
         :x="item.x"
         :y="item.y"
