@@ -1,5 +1,6 @@
 dependencies:
   core-js: registry.nlark.com/core-js/3.12.0
+  element-ui: 2.15.1_vue@2.6.12
   moveable: 0.24.6
   tslib: registry.npm.taobao.org/tslib/2.2.0
   uuid: 8.3.2
@@ -130,6 +131,12 @@ packages:
     optional: true
     resolution:
       integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==
+  /async-validator/1.8.5:
+    dependencies:
+      babel-runtime: 6.26.0
+    dev: false
+    resolution:
+      integrity: sha512-tXBM+1m056MAX0E8TL2iCjg8WvSyXu0Zc8LNtYqrVeyoL3+esHRZ4SieE9fKQyyU09uONjnMEjrNBMqT0mbvmA==
   /at-least-node/1.0.0:
     dev: true
     engines:
@@ -137,6 +144,17 @@ packages:
     optional: true
     resolution:
       integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
+  /babel-helper-vue-jsx-merge-props/2.0.3:
+    dev: false
+    resolution:
+      integrity: sha512-gsLiKK7Qrb7zYJNgiXKpXblxbV5ffSwR0f5whkPAaBAR4fhi6bwRZxX9wBlIc5M/v8CCkXUbXZL4N/nSE97cqg==
+  /babel-runtime/6.26.0:
+    dependencies:
+      core-js: 2.6.12
+      regenerator-runtime: 0.11.1
+    dev: false
+    resolution:
+      integrity: sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
   /balanced-match/1.0.2:
     dev: true
     optional: true
@@ -214,6 +232,12 @@ packages:
     optional: true
     resolution:
       integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
+  /core-js/2.6.12:
+    deprecated: core-js@<3.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+    dev: false
+    requiresBuild: true
+    resolution:
+      integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
   /cosmiconfig/6.0.0:
     dependencies:
       '@types/parse-json': 4.0.0
@@ -241,6 +265,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-HADRhVqPc8wFqEp6ClK+uuPYg+FMBinNo2ReLyI/KQCncmHPJ60o5zldyJG7NjsTqXWbdfGJO51jnoxfMvWJiA==
+  /deepmerge/1.5.2:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-95k0GDqvBjZavkuvzx/YqVLv/6YYa17fz6ILMSf7neqQITCPbnfEnQvEgMPNjH4kgobe7+WIL0yJEHku+H3qtQ==
   /deepmerge/4.2.2:
     dev: true
     engines:
@@ -248,6 +278,20 @@ packages:
     optional: true
     resolution:
       integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
+  /element-ui/2.15.1_vue@2.6.12:
+    dependencies:
+      async-validator: 1.8.5
+      babel-helper-vue-jsx-merge-props: 2.0.3
+      deepmerge: 1.5.2
+      normalize-wheel: 1.0.1
+      resize-observer-polyfill: 1.5.1
+      throttle-debounce: 1.1.0
+      vue: registry.npm.taobao.org/vue/2.6.12
+    dev: false
+    peerDependencies:
+      vue: ^2.5.17
+    resolution:
+      integrity: sha512-TqlScAKGH97XndSScUDeEHIzL1x7yg7DvQdKPEOUdiDcyIz3y3FJJBlpHYaJT96FOn1xpIcUZb+I2FJeU9EcrQ==
   /emojis-list/3.0.0:
     dev: true
     engines:
@@ -457,6 +501,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-7lYRNwLyIvyxKwy8/V1OJwUFUmQEbMRFJ8w3xRUdKrHjW3otwZwLpdylMPPx65zA3WbWDiFoe7AZB4F/MULsKw==
+  /normalize-wheel/1.0.1:
+    dev: false
+    resolution:
+      integrity: sha1-rsiGr/2wRQcNhWRH32Ls+GFG7EU=
   /overlap-area/1.0.0:
     dependencies:
       '@daybrush/utils': 1.4.0
@@ -547,6 +595,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-jnwwX5QTktcZgZDJYukN2qCxu4WQBrFHu3d4zTdvGaeGA61sUn1Qsv8cOSeW1HSyPE9oEUBIBrOqwEFA1VWDbA==
+  /regenerator-runtime/0.11.1:
+    dev: false
+    resolution:
+      integrity: sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
+  /resize-observer-polyfill/1.5.1:
+    dev: false
+    resolution:
+      integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
   /resolve-from/4.0.0:
     dev: true
     engines:
@@ -604,6 +660,12 @@ packages:
     optional: true
     resolution:
       integrity: sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA==
+  /throttle-debounce/1.1.0:
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-XH8UiPCQcWNuk2LYePibW/4qL97+ZQ1AN3FNXwZRBNPPowo/NRU5fAlDCSNBJIYCKbioZfuYtMhG4quqoJhVzg==
   /universalify/2.0.0:
     dev: true
     engines:
@@ -14112,6 +14174,7 @@ specifiers:
   '@vue/cli-plugin-vuex': ~4.5.0
   '@vue/cli-service': ~4.5.0
   core-js: ^3.6.5
+  element-ui: ^2.15.1
   moveable: ^0.24.6
   stylus: ^0.54.7
   stylus-loader: ^3.0.2
