@@ -1,9 +1,12 @@
 <template>
   <div class="menu-bar">
+    <!-- TODO 动态生成菜单 -->
     <el-menu
+      ref="menu"
       class="el-menu-demo"
       mode="horizontal"
       @select="handleSelect"
+      @close="handleClose"
     >
       <el-menu-item index="1">文件</el-menu-item>
       <el-submenu index="2">
@@ -24,11 +27,20 @@
   </div>
 </template>
 <script lang='ts'>
+// @ts-nocheck
+import { Mutations } from '@/store/mutations';
+
 export default {
   name: "menu-bar",
   methods: {
     handleSelect(val: any) {
       console.log(val)
+      if (val === '2-4-1') {
+        this.$store.commit(Mutations.addNode, 'rect')
+      }
+    },
+    handleClose() {
+      (this as any).$refs.menu.activeIndex = ""
     }
   }
 };
@@ -46,6 +58,7 @@ export default {
   .el-menu-item,.el-submenu__title {
     height: 25px !important;
     line-height: 25px !important;
+    padding: 0 10px !important;
   }
 }
 </style>

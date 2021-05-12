@@ -1,3 +1,5 @@
 export enum Mutations {
-    setSelectedNodeId,
+    setSelectedNodeId = 'setSelectedNodeId',
+    addNode = 'addNode',
+    initStage = 'initStage',
 }

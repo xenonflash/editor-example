@@ -9,16 +9,12 @@
 // @ts-nocheck
 import Stage from '@/editorImpl/stage'
 import Node from '@/editorImpl/node'
+import { Mutations } from '@/store/mutations';
 
 export default {
   name: "stage-panel",
-
   mounted() {
-    const stage = new Stage(this.$refs.stageCore)
-    console.log(stage)
-    const rect = new Node(stage)
-    console.log(rect)
-    stage.add(rect)
+    this.$store.commit(Mutations.initStage, this.$refs.stageCore)
   },
 };
 </script>

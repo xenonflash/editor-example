@@ -10,7 +10,7 @@ export default class Stage {
     public moveableInstance: any
     private el: HTMLElement
     public nodes: NodeMap = {}
-    constructor(el: HTMLElement, options: Partial<MoveableOptions>) {
+    constructor(el: HTMLElement, options?: Partial<MoveableOptions>) {
         this.moveableInstance = new Moveable(el, options)
         this.el = el
         this.initEvent()

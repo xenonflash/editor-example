@@ -1,4 +1,7 @@
+import Moveable from 'moveable'
 import { Mutations } from './mutations'
+import Node from '@/editorImpl/node'
+import Stage from '@/editorImpl/stage'
 
 export default {
     state: {
@@ -12,7 +15,19 @@ export default {
     mutations: {
         [Mutations.setSelectedNodeId](state: any, nodeId: string) {
             state.selectedNodeId = nodeId
-        }
+        },
+        [Mutations.initStage](state: any, el: HTMLElement) {
+            state.stage = new Stage(el)
+            console.log(state.stage)
+        },
+        [Mutations.addNode](state: any, type: string) {
+            if (type === 'rect') {
+                state.stage = state.stage as Moveable
+                const rect = new Node(state.stage)
+                console.log(rect)
+                state.stage.add(rect)
+            }
+        } 
     },
     actions: {
 
