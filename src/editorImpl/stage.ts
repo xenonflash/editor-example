@@ -10,6 +10,7 @@ export default class Stage {
     public moveableInstance: any
     private el: HTMLElement
     public nodes: NodeMap = {}
+    public currFrame: any
     constructor(el: HTMLElement, options?: Partial<MoveableOptions>) {
         this.moveableInstance = new Moveable(el, options)
         this.el = el
@@ -27,44 +28,39 @@ export default class Stage {
         return node.select()
     }
     private initEvent() {
-        let frame = {
-            translate: [0, 0],
-            rotate: 0,
-            transformOrigin: "50% 50%",
-        };
         this.moveableInstance
             .on("dragOriginStart", (e: MoveableEvents) => {
-                e.dragStart && e.dragStart.set(frame.translate);
+                e.dragStart && e.dragStart.set(this.currFrame.translate);
             })
             .on("dragOrigin", (e: any) => {
-                frame.translate = e.drag.beforeTranslate;
-                frame.transformOrigin = e.transformOrigin;
+                this.currFrame.translate = e.drag.beforeTranslate;
+                this.currFrame.transformOrigin = e.transformOrigin;
             })
             .on("dragStart", (e: any) => {
-                e.set(frame.translate);
+                e.set(this.currFrame.translate);
             })
             .on("drag", (e: any) => {
-                frame.translate = e.beforeTranslate;
+                this.currFrame.translate = e.beforeTranslate;
             })
             .on("rotateStart", (e: any) => {
-                e.set(frame.rotate);
+                e.set(this.currFrame.rotate);
             })
             .on("rotate", (e: any) => {
-                frame.rotate = e.beforeRotate;
+                this.currFrame.rotate = e.beforeRotate;
             })
             .on("resizeStart", (e: any) => {
                 e.setOrigin(["%", "%"]);
-                e.dragStart && e.dragStart.set(frame.translate);
+                e.dragStart && e.dragStart.set(this.currFrame.translate);
             })
             .on("resize", (e: any) => {
                 const beforeTranslate = e.drag.beforeTranslate;
-                frame.translate = beforeTranslate;
+                this.currFrame.translate = beforeTranslate;
                 e.target.style.width = `${e.width}px`;
                 e.target.style.height = `${e.height}px`;
                 e.target.style.transform = `translate(${beforeTranslate[0]}px, ${beforeTranslate[1]}px)`;
             })
             .on("render", (e: any) => {
-                const { translate, rotate, transformOrigin } = frame;
+                const { translate, rotate, transformOrigin } = this.currFrame;
                 e.target.style.transformOrigin = transformOrigin;
                 e.target.style.transform =
                     `translate(${translate[0]}px, ${translate[1]}px)` +

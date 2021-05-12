@@ -28,6 +28,11 @@ export default class Node {
     public draggable: boolean
     public resizable: boolean
     public rotatable: boolean
+    private frame = {
+        translate: [0, 0],
+        rotate: 0,
+        transformOrigin: "50% 50%",
+    };
     constructor(parent: Moveable, options = defaultNodeOption) {
         this.draggable = options.draggable
         this.resizable = options.resizable
@@ -44,6 +49,7 @@ export default class Node {
         el.addEventListener('click', this.select.bind(this))
     }
     public select(): Node {
+        this.parent.currFrame = this.frame
         this.parent.moveableInstance.target = this.el
         this.parent.moveableInstance.draggable = this.draggable
         this.parent.moveableInstance.resizable = this.resizable
