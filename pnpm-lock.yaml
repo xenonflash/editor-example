@@ -2,6 +2,7 @@ dependencies:
   core-js: registry.nlark.com/core-js/3.12.0
   element-ui: 2.15.1_vue@2.6.12
   moveable: 0.24.6
+  tapable: 2.2.0
   tslib: registry.npm.taobao.org/tslib/2.2.0
   uuid: 8.3.2
   vue: registry.npm.taobao.org/vue/2.6.12
@@ -660,6 +661,12 @@ packages:
     optional: true
     resolution:
       integrity: sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA==
+  /tapable/2.2.0:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-FBk4IesMV1rBxX2tfiK8RAmogtWn53puLOQlvO8XuwlgxcYbP4mVPS9Ph4aeamSyyVjOl24aYWAuc8U5kCVwMw==
   /throttle-debounce/1.1.0:
     dev: false
     engines:
@@ -14178,6 +14185,7 @@ specifiers:
   moveable: ^0.24.6
   stylus: ^0.54.7
   stylus-loader: ^3.0.2
+  tapable: ^2.2.0
   tslib: ^2.2.0
   typescript: ~4.1.5
   uuid: ^8.3.2
