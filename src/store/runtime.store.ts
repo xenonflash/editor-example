@@ -2,6 +2,7 @@ import Moveable from 'moveable'
 import { Mutations } from './mutations'
 import Node from '@/editorImpl/node'
 import Stage from '@/editorImpl/stage'
+import Scene from '@/editorImpl/scene'
 
 export default {
     state: {
@@ -27,7 +28,11 @@ export default {
                 console.log(rect)
                 state.stage.add(rect)
             }
-        } 
+        },
+        [Mutations.addScene](state: any) {
+            // const scene = new Scene()
+            // state.sceneList.push(scene)
+        }
     },
     actions: {
 
