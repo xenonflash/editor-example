@@ -1,17 +1,21 @@
 <template>
   <div class="page-list">
     page list
-    <div class="page-item">1</div>
-    <div class="page-item">2</div>
-    <div class="page-item">3</div>
-    <div class="page-item">4</div>
-    <div class="page-item">5</div>
-    <div class="page-item">6</div>
+    <div class="page-item">
+      <el-button type="text" @click="addScene">
+        <el-icon name='plus'></el-icon>
+      </el-button>
+    </div>
   </div>
 </template>
 <script lang="ts">
 export default {
-  name: 'page-list'
+  name: 'page-list',
+  methods: {
+    addScene() {
+      
+    }
+  }
 }
 </script>
 <style lang="stylus">
