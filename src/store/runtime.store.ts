@@ -8,7 +8,7 @@ export default {
     state: {
         stage: null,
         selectedNodeId: '',
-        currentSceneIdx: 0,
+        selectedSceneId: '',
         sceneList: [],
         assets: {},
         nodes: {}
@@ -30,8 +30,12 @@ export default {
             }
         },
         [Mutations.addScene](state: any) {
-            // const scene = new Scene()
-            // state.sceneList.push(scene)
+            const scene = new Scene()
+            state.sceneList.push(scene)
+            state.selectedSceneId = scene.id
+        },
+        [Mutations.setSelectedSceneId](state: any, sceneId: string) {
+            state.selectedSceneId = sceneId
         }
     },
     actions: {
@@ -39,8 +43,9 @@ export default {
     },
     getters: {
         sceneList: (state: any) => state.sceneList,
-        currScene: (state: any) => state.sceneList[state.currentSceneIdx],
+        currScene: (state: any) => state.sceneList.find((scene: any) => scene.id === state.selectedSceneId),
         selectedNode: (state: any) => (state.nodes as any)[state.selectedNodeId],
-        totalSceneCount: (state: any) => state.sceneList.length
+        totalSceneCount: (state: any) => state.sceneList.length,
+        currentSceneIdx: (state: any) => state.sceneList.indexOf((scene: any) => scene.id === state.selectedSceneId)
     },
 }

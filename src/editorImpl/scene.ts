@@ -10,8 +10,8 @@ export default class Scene {
     public stage: Stage
     public nodes: NodeMap = {}
     public id: string
-    constructor(stage) {
-        this.stage = stage
+    constructor() {
+        // this.stage = stage
         this.id = uuid()
     }
 }
