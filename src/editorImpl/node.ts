@@ -54,6 +54,8 @@ export default class Node {
         this.parent.moveableInstance.draggable = this.draggable
         this.parent.moveableInstance.resizable = this.resizable
         this.parent.moveableInstance.rotatable = this.rotatable
+        this.parent.moveableInstance.originDraggable = true
+        this.parent.moveableInstance.originDraggableRelative = true
         return this
     }
     public addToParent() {
