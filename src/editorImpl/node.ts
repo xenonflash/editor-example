@@ -38,8 +38,10 @@ export default class Node {
         const el = document.createElement('div')
         el.style.width = options.width + 'px'
         el.style.height = options.height + 'px'
+        el.style.background = '#eee'
         el.className = nodeClassName
         this.el = el
+        el.addEventListener('click', this.select.bind(this))
     }
     public select(): Node {
         this.parent.moveableInstance.target = this.el
